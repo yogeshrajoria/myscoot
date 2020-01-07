@@ -1,0 +1,25 @@
+.header {
+  background-color: #282c34;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 5px 20px;
+  .logo{
+    border-radius: 15px;
+  }
+  a{
+    color: currentColor;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+

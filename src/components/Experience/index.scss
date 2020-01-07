@@ -1,0 +1,60 @@
+.exp{
+    background: #51C6D0;
+    .side-text{
+        padding-bottom: 20rem;
+        position: relative;
+        .text-vertical{
+            position: absolute;
+            bottom: 28px;
+            font-size: 24px;
+            left: -3px;
+            transform: rotate(-90deg);
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            white-space: nowrap;
+            font-weight: 600;
+            @media screen and (max-width: 424px){
+                transform: none;
+                width: auto;
+                position: static;
+                padding-left: 10px;
+            }
+            
+        }
+    }
+    .exp-info{
+        @media screen and (min-width: 767px){
+            padding-right: 50px;
+        }
+        
+    }
+    .exp-title{
+        font-size: 5rem;
+        margin: 0 0 15px;    
+        @media screen and (max-width: 426px){
+            font-size: 3rem;
+        }
+    }
+    .exp-subtitle{
+        font-size: 22px;
+        display: inline-block;
+        padding-right: 42px;
+    }
+    .underline-orange{
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        &:before{
+            content: "";
+            display: inline-block;
+            height: 20px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #DC702A;
+            z-index: -1;
+        }
+    }
+}
