@@ -12,7 +12,7 @@ function Experience(){
                 <div className="row col-sm">
                     <div className="col-6 col-xs-12 exp-info">
                         <h2 className="exp-title">Let's <span className="underline-orange">meet</span>, <span className="underline-orange">experience</span> and <span className="underline-orange">share</span></h2>
-                        <p class="exp-subtitle">People attend MyScoot experiences to have fun and meet new people who share similar interests and experiences.</p>
+                        <p className="exp-subtitle">People attend MyScoot experiences to have fun and meet new people who share similar interests and experiences.</p>
                     </div>
                     <div className="col-6 col-xs-12 d-flex justify-content-center video-box">
                         <Video/>
