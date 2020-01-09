@@ -1,0 +1,130 @@
+.mosaic {
+    display: flex;
+    margin-top: 60px;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+.mosaic_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mosaic_item{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease;
+    cursor: pointer;
+    &:hover{
+        .mosaic_img{
+            filter: blur(8px);
+        }
+        p{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            color: #fff;
+            text-align: center;
+            bottom: 0;
+            font-size: 22px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s ease;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: #fff;
+                opacity: 0.09;
+            }
+            
+            .explore-more{
+                &:before{
+                    content:'';
+                    position: absolute;
+                    height: 3px;
+                    background: #fff;
+                    width: 50%;
+                    right: 13%;
+                    top: calc(50% + 29px);
+                }
+                &.small:before{
+                    top: calc(50% + 16px);
+                }
+                &:after{
+                    content: "explore more";
+                    position: absolute;
+                    font-size: 10px;
+                    top: calc(50% + 34px);
+                    right: 41%;
+                }
+                &.small:after{
+                    top: calc(50% + 24px);
+                    right: 28%;
+                }
+            }
+        }
+    }
+    p{
+        color: transparent;
+        height: 0;
+        margin: 0;
+        &.font-24{
+            font-size: 45px;
+        }
+    }
+}
+.mosaic_item-2{
+    height: 164px;
+    margin-right: 10px;
+}
+.mosaic_item-3{
+    height: 164px;
+}
+.mosaic_item-4{
+    height: 170px;
+    margin-right: 10px;
+    @media screen and (max-width: 767px){
+        height: 100%;
+    }
+}
+.mosaic_item-6{
+    margin-top: 10px;
+    margin-right: 10px;
+} 
+.mosaic_item-7{
+    margin-top: 10px;
+}
+.mos-col-1 {
+    display: flex;
+    width: 30%;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+.mos-col-2{
+    display: flex;
+    width: 33%;
+    margin-left: 10px;
+    @media screen and (max-width: 767px){
+        width: 100%;
+        margin: 10px 0 0;
+    }
+}
+.mos-col-3{
+    display: flex;
+    width: 37%;
+    margin-left: 10px;
+    @media screen and (max-width: 767px){
+        width: 100%;
+        margin: 10px 0 0;
+    }
+}
